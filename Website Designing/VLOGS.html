@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>VLOGS</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f0f0f0;
+                color: #333;
+                margin: 0;
+                padding: 20px;
+                background: linear-gradient(#f33737, #f38282);
+            }
+            h1 {
+                text-align: center;
+                color: #2c3e50;
+            }
+            h1:hover {
+                color: #3498db;
+            }
+            p {
+                text-align: center;
+                font-size: 18px;
+                margin-top: 20px;
+            }
+            a {
+                display: inline-block;
+                margin-top: 30px;
+                padding: 10px 20px;
+                background-color: #3498db;
+                color: white;
+                text-decoration: none;
+                border-radius: 5px;
+            }
+            a:hover {
+                background-color: #2c3e50;
+            }
+        .carousel-container {
+            position: relative;
+            width: 100%;
+            max-width: 1000px;
+            overflow: hidden;
+            margin: auto;
+        }
+        .carousel-track {
+            display: flex;
+            width: calc(100% * 5);
+            animation: slideImages 10s steps(5) infinite;
+        }
+        .carousel-track img {
+            width: 1100px;
+            height: 700px;
+            object-fit: contain;
+        }
+        @keyframes slideImages {
+            0% { transform: translateX(0%); }
+            20% { transform: translateX(-100%); }
+            40% { transform: translateX(-200%); }
+            60% { transform: translateX(-300%); }
+            80% { transform: translateX(-400%); }
+            100% { transform: translateX(0%); }
+        }
+        </style>
+    </head>
+    <body>
+        <h1>VLOGS</h1>
+        <p>Welcome to the VLOGS page!</p>
+        <p>Here you can find various video logs.</p>
+        <p>Stay tuned for more updates!</p>
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="https://www.youtube.com/@subhashinivalasani" target="_blank" style="text-decoration: none; font-size: 18px; font-weight: bold; color: teal;">🎥 Visit Our YouTube Channel</a>
+        </div><br><br>
+    <div class="carousel-container">
+        <div class="carousel-track">
+        <img src="Images/img7.jpg" alt="_blank">
+        <img src="Images/img3.jpg" alt="_blank">
+        <img src="Images/img5.jpg" alt="_blank">
+        <img src="Images/img4.jpg" alt="_blank">
+        <img src="Images/img6.jpg" alt="_blank">
+        </div>
+    </div>
+    </body>
+</html>
